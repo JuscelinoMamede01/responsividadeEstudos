@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 8%, 14%);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 70px;
+    gap: 10px;
+}
+
+header {
+    border: 5px solid #0C005A;
+    color: #EEF5B2;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav {
+    border: 5px solid #A8FF3E;
+    width: 70%;
+    margin-right: 15px;
+}
+
+main {
+    border: 5px solid #0C005A;
+    color: #EEF5B2;
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: 40px 1fr 100px;
+    grid-template-areas:
+        "h1 aside"
+        "section01 aside"
+        "section02 aside"
+    ;
+    gap: 10px;
+    padding: 10px;
+}
+
+nav,
+section,
+aside {
+    border: 5px solid rgb(214, 214, 8);
+    color: rgb(214, 214, 8);
+    padding: 10px;
+}
+
+aside {
+    grid-area: aside;
+    gap: 10px;
+}
+
+main>h1 {
+    grid-area: h1;
+}
+
+#section-01 {
+    grid-area: section01;
+}
+
+#section-02 {
+    grid-area: section02;
+}
+
+section>article {
+    border: 5px solid #10EAF0;
+    color: #10EAF0;
+    height: 70px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+aside section {
+    border: 5px solid #10EAF0;
+    color: #10EAF0;
+    height: 100px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+@media (max-width: 680px) {
+    body {
+        grid-template-rows: 150px 1fr 70px;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 1fr 100px auto;
+        grid-template-areas:
+            "h1"
+            "section01"
+            "section02"
+            "aside"
+        ;
+        gap: 10px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        overflow-y: hidden;
+
+    }
+
+    aside>div {
+        gap: 10px;
+        display: flex;
+    }
+}
+
+footer {
+    border: 5px solid #0C005A;
+    color: #EEF5B2;
+}
