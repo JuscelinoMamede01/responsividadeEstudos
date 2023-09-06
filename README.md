@@ -6,6 +6,11 @@ b) CSS Grid;
 c) CSS Flexbox; 
 d) Media Queries.
 
+### Desktop
+<img src="https://raw.githubusercontent.com/JuscelinoMamede01/responsividadeEstudos/main/assets/screen (2).png" width="55%">
+
+### Mobile
+<img src="https://raw.githubusercontent.com/JuscelinoMamede01/responsividadeEstudos/main/assets/screen (1).png" width="25%">
 
 
 ## 🚀 Tecnologias
