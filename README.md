@@ -1,10 +1,13 @@
 # Layout de site responsivo
 
 Este projeto foi realizado na SoftexPe para aprimorar os conheceimentos de HTML e CSS na prática utilizando os seguintes conceitos: 
-a) Tags semânticas HTML; 
-b) CSS Grid; 
-c) CSS Flexbox; 
-d) Media Queries.
+
++ Tags semânticas HTML; 
++ CSS Grid; 
++ CSS Flexbox; 
++ Media Queries.
+
+# Telas
 
 ### Desktop
 <img src="https://raw.githubusercontent.com/JuscelinoMamede01/responsividadeEstudos/main/assets/screen (2).png" width="55%">
